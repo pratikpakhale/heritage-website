@@ -46,7 +46,7 @@ exports.getArtById = async (req, res) => {
 
 exports.getArtsByCity = async (req, res) => {
   try {
-    const city = await cityController.getCityByName(req.params.city)
+    const city = await City.findOne({ name: req.params.city })
 
     if (city.length === 0) {
       res.status(404).json({ message: 'City not found' })
