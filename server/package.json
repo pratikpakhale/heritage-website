@@ -1,8 +1,9 @@
 {
-  "name": "SE Assignment",
+  "name": "se_assignment",
   "packageManager": "yarn@3.4.1",
   "scripts": {
-    "start": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "dependencies": {
     "assert": "^2.0.0",
