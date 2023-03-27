@@ -2,6 +2,8 @@ function Docs() {
   return (
     <div className='w-full px-20 flex items-start flex-col'>
       <br />
+      BASE ENDPOINT = {import.meta.env.VITE_API_ENDPOINT}
+      <br />
       <h1 className='text-xl'>City Routes</h1>
       <br />
       <h2>GET Requests:</h2>
