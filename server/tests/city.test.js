@@ -19,8 +19,6 @@ describe('City controller tests', function () {
       useNewUrlParser: true,
     })
 
-    console.log('Connected to MongoDB')
-
     // Insert dummy data before each test
 
     const cities = [
