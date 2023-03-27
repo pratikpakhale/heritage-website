@@ -18,7 +18,7 @@ function AddCity() {
       pincode,
     }
 
-    fetch('http://localhost:5000/api/cities', {
+    fetch(import.meta.env.VITE_API_ENDPOINT + '/api/cities', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -30,7 +30,7 @@ function AddArt() {
       artist,
     }
 
-    fetch('http://localhost:5000/api/arts', {
+    fetch(import.meta.env.VITE_API_ENDPOINT + '/api/arts', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

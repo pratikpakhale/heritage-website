@@ -8,7 +8,9 @@ function Home() {
   const [search, setSearch] = useState('')
 
   const fetchArts = useCallback(async () => {
-    const response = await fetch('http://localhost:5000/api/arts')
+    const response = await fetch(
+      import.meta.env.VITE_API_ENDPOINT + '/api/arts'
+    )
     const data = await response.json()
     console.log(data)
     setArts(data)
@@ -22,7 +24,7 @@ function Home() {
     e.preventDefault()
 
     const response = await fetch(
-      `http://localhost:5000/api/arts/search?query=${search}`
+      import.meta.env.VITE_API_ENDPOINT + `/api/arts/search?query=${search}`
     )
     const data = await response.json()
     console.log(data)

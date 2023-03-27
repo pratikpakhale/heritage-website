@@ -11,3 +11,5 @@
 .pnp.*
 .pnp.cjs
 .yarn
+
+.env
